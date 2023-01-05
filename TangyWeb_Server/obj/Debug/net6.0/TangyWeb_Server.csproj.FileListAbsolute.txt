@@ -30,3 +30,6 @@ G:\Myprograms\dotnet\Tangy\TangyWeb_Server\obj\Debug\net6.0\refint\TangyWeb_Serv
 G:\Myprograms\dotnet\Tangy\TangyWeb_Server\obj\Debug\net6.0\TangyWeb_Server.pdb
 G:\Myprograms\dotnet\Tangy\TangyWeb_Server\obj\Debug\net6.0\TangyWeb_Server.genruntimeconfig.cache
 G:\Myprograms\dotnet\Tangy\TangyWeb_Server\obj\Debug\net6.0\ref\TangyWeb_Server.dll
+G:\Myprograms\dotnet\Tangy\TangyWeb_Server\bin\Debug\net6.0\Tangy_Models.dll
+G:\Myprograms\dotnet\Tangy\TangyWeb_Server\bin\Debug\net6.0\Tangy_Models.pdb
+G:\Myprograms\dotnet\Tangy\TangyWeb_Server\obj\Debug\net6.0\TangyWeb_Server.csproj.CopyComplete

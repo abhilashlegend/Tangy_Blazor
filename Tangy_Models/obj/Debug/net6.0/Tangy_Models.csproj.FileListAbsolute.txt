@@ -1,0 +1,12 @@
+G:\Myprograms\dotnet\Tangy\Tangy_Models\bin\Debug\net6.0\Tangy_Models.deps.json
+G:\Myprograms\dotnet\Tangy\Tangy_Models\bin\Debug\net6.0\Tangy_Models.dll
+G:\Myprograms\dotnet\Tangy\Tangy_Models\bin\Debug\net6.0\Tangy_Models.pdb
+G:\Myprograms\dotnet\Tangy\Tangy_Models\obj\Debug\net6.0\Tangy_Models.csproj.AssemblyReference.cache
+G:\Myprograms\dotnet\Tangy\Tangy_Models\obj\Debug\net6.0\Tangy_Models.GeneratedMSBuildEditorConfig.editorconfig
+G:\Myprograms\dotnet\Tangy\Tangy_Models\obj\Debug\net6.0\Tangy_Models.AssemblyInfoInputs.cache
+G:\Myprograms\dotnet\Tangy\Tangy_Models\obj\Debug\net6.0\Tangy_Models.AssemblyInfo.cs
+G:\Myprograms\dotnet\Tangy\Tangy_Models\obj\Debug\net6.0\Tangy_Models.csproj.CoreCompileInputs.cache
+G:\Myprograms\dotnet\Tangy\Tangy_Models\obj\Debug\net6.0\Tangy_Models.dll
+G:\Myprograms\dotnet\Tangy\Tangy_Models\obj\Debug\net6.0\refint\Tangy_Models.dll
+G:\Myprograms\dotnet\Tangy\Tangy_Models\obj\Debug\net6.0\Tangy_Models.pdb
+G:\Myprograms\dotnet\Tangy\Tangy_Models\obj\Debug\net6.0\ref\Tangy_Models.dll
