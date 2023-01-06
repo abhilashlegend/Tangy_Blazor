@@ -37,9 +37,44 @@
         
         <div>This product is : @(Product.IsActive ? "Active" : "InActive")</div>
         
+    </div> <!-- End of column -->
+</div> <!-- End of row -->
+
+<h2 class="text-success mt-3">Product Table</h2>
+<div class="row">
+    <div class="col-12">
+        <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Product</th>
+      <th scope="col">Price</th>
+      <th scope="col">Is Active</th>
+    </tr>
+  </thead>
+  <tbody>
+                @foreach(var product in Products)
+                {
+                    <tr>
+                        <td><input type="text" @bind-value="@product.Name" @bind-value:event="oninput" /></td>
+                        <td><input type="text" @bind-value="@product.Price" @bind-value:event="oninput" /></td>
+                        <td><input type="checkbox" @bind-value="@product.IsActive" checked="@product.IsActive" /></td>
+                    </tr>
+                }
+            </tbody>
+  </table>
+    </div>
+</div> <!-- End of row -->
+
+<div class="row">
+    <div class="col-12">
+        <h3>Product Summary</h3>
+        @foreach(var product in Products)
+        {
+            <p>@product.Name [@product.Price] is @(@product.IsActive?"Active":"Inactive")</p>
+        }
+        
     </div>
 </div>
-
 
 
 
