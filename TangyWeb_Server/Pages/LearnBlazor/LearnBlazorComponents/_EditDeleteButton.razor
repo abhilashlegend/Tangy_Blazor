@@ -1,8 +1,10 @@
-﻿<div class="mt-4">
+﻿@if(@IsActive){ 
+<div class="mt-4">
     <button class="btn btn-danger mr-2">Delete</button>
     <button class="btn btn-success">Edit</button>
 </div>
-
+}
 @code {
-
+    [Parameter]
+    public bool IsActive { get; set; }
 }
