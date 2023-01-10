@@ -44,6 +44,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVhcm5CbGF6b3JcTGVhcm5CbGF6b3JDb21wb25lbnRzXF9FZGl0RGVsZXRlQnV0dG9uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[G:/Myprograms/dotnet/Tangy/TangyWeb_Server/Pages/LearnBlazor/LearnBlazorComponents/_ProductDetail.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVhcm5CbGF6b3JcTGVhcm5CbGF6b3JDb21wb25lbnRzXF9Qcm9kdWN0RGV0YWlsLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [G:/Myprograms/dotnet/Tangy/TangyWeb_Server/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
