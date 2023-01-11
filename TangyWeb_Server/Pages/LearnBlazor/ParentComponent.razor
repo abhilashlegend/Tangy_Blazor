@@ -9,12 +9,19 @@
     @Message
 </div>
 
-<_AnotherChildComponent Placeholder="Parent placeholder text">
+<_AnotherChildComponent InputAttributes="ParentAttributes">
 
 </_AnotherChildComponent>
 
 @code {
     public string Message = "";
+
+    public Dictionary<string, object> ParentAttributes = new Dictionary<string, object>()
+    {
+        {"placeholder", "Parent placeholder text" },
+        {"required", "required" },
+        {"maxlength", 5 }
+    };
 
     private void SetMessage()
     {
