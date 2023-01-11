@@ -1,0 +1,22 @@
+﻿
+<h4>@Title</h4>
+@if (ChildContent != null)
+{
+    <div class="alert alert-info">
+        <span>@ChildContent</span>
+    </div>
+}
+<p><button class="btn btn-outline-primary" @onclick="OnButtonClick">Click me!</button></p>
+
+
+
+@code {
+    [Parameter]
+    public string Title { get; set;  }
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set;  }
+
+    [Parameter]
+    public EventCallback OnButtonClick { get; set; }
+}

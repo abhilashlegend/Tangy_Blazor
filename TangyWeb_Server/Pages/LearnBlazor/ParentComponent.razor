@@ -1,0 +1,18 @@
+﻿@page "/learnblazor/parentcomponent"
+
+<h3>Parent Child Relation</h3>
+<_ChildComponent title="This is the title value set in parent component" OnButtonClick="SetMessage">
+    This is passed in between child component from parent component
+</_ChildComponent>
+<div class="alert alert-success">
+    @Message
+</div>
+
+@code {
+    public string Message = "";
+
+    private void SetMessage()
+    {
+        Message = "Hello how are you doing";
+    }
+}

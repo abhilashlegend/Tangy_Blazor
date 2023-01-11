@@ -1,4 +1,5 @@
-﻿<div class="col-md-6">
+﻿<div class="col-md-6" @onclick="(args)=>LastSelectedProduct(args,prod.Name)">
+    <input type="checkbox" @onchange="SetFavourite" /> Set this as favourite <br /><br />
     <h4>Product - @prod.Id</h4>
     <div>Name - @prod.Name</div>
     <div>Show Properties - <input type="checkbox" @bind-value="@prod.IsActive" checked="@prod.IsActive" /></div>
@@ -16,4 +17,22 @@
 @code {
     [Parameter]
     public Demo_Product prod { get; set;  }
+
+    [Parameter]
+    public EventCallback<bool> onSetFavourite { get; set; }
+    
+    [Parameter]
+    public EventCallback<string> OnLastSelectedProductChange { get; set; }
+    
+    private async Task SetFavourite(ChangeEventArgs e)
+    {
+        await onSetFavourite.InvokeAsync((bool)e.Value);
+    }
+
+    
+    private async Task LastSelectedProduct(MouseEventArgs e, string name)
+        {
+        await OnLastSelectedProductChange.InvokeAsync(name);
+    }
+    
 }
