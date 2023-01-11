@@ -6,6 +6,8 @@
 <div class="row border bg-light p-3">
     @foreach(var prod in Products){
         <_ProductDetail prod="@prod" onSetFavourite="setFavourite" OnLastSelectedProductChange="SelectedProductUpdate">
+            <FirstFragment>#1</FirstFragment>
+            <SecondFragment>#2</SecondFragment>
         </_ProductDetail>
     }
 </div> <!-- End of row -->

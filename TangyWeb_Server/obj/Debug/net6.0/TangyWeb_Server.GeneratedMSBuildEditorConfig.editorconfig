@@ -40,6 +40,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVhcm5CbGF6b3JcRGVtb1Byb2R1Y3QucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[G:/Myprograms/dotnet/Tangy/TangyWeb_Server/Pages/LearnBlazor/LearnBlazorComponents/_AnotherChildComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVhcm5CbGF6b3JcTGVhcm5CbGF6b3JDb21wb25lbnRzXF9Bbm90aGVyQ2hpbGRDb21wb25lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [G:/Myprograms/dotnet/Tangy/TangyWeb_Server/Pages/LearnBlazor/LearnBlazorComponents/_ChildComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVhcm5CbGF6b3JcTGVhcm5CbGF6b3JDb21wb25lbnRzXF9DaGlsZENvbXBvbmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 

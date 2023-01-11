@@ -2,6 +2,7 @@
     <input type="checkbox" @onchange="SetFavourite" /> Set this as favourite <br /><br />
     <h4>Product - @prod.Id</h4>
     <div>Name - @prod.Name</div>
+    <div><p>RF from Parent - @FirstFragment @SecondFragment</p></div>
     <div>Show Properties - <input type="checkbox" @bind-value="@prod.IsActive" checked="@prod.IsActive" /></div>
     @if (prod.IsActive)
     {
@@ -17,6 +18,12 @@
 @code {
     [Parameter]
     public Demo_Product prod { get; set;  }
+
+    [Parameter]
+    public RenderFragment FirstFragment {get; set; }
+
+    [Parameter]
+    public RenderFragment SecondFragment { get; set; }
 
     [Parameter]
     public EventCallback<bool> onSetFavourite { get; set; }
