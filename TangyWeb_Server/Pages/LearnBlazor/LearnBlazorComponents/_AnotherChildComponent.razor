@@ -14,12 +14,17 @@
     */
 
     // Attribute Splatting example
+    /*
     [Parameter]
     public Dictionary<string, object> InputAttributes { get; set; } = new Dictionary<string, object>()
-    {
+        {
         {"placeholder", "Initial Text" },
         {"required", "required"},
         {"maxlength", 10 }
-    };
+        };
+    */
+    [Parameter(CaptureUnmatchedValues = true)]
+    public Dictionary<string, object> InputAttributes {get; set; } = new Dictionary<string, object>();
+    
 
 }

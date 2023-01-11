@@ -9,12 +9,13 @@
     @Message
 </div>
 
-<_AnotherChildComponent InputAttributes="ParentAttributes">
+<_AnotherChildComponent placeholder="placeholder from parent" maxlength="5">
 
 </_AnotherChildComponent>
 
 @code {
     public string Message = "";
+
 
     public Dictionary<string, object> ParentAttributes = new Dictionary<string, object>()
     {
