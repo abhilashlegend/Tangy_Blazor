@@ -14,9 +14,14 @@
 }
 <p><button class="btn btn-outline-primary" @onclick="OnButtonClick">Click me!</button></p>
 
+<_GrandChildComponent MessageForGrandChild="@MessageForGrandChild"></_GrandChildComponent>
+
 
 
 @code {
+    [Parameter]
+    public string MessageForGrandChild { get; set; }
+
     [Parameter]
     public string Title { get; set;  }
 

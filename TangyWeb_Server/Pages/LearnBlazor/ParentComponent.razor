@@ -1,7 +1,7 @@
 ﻿@page "/learnblazor/parentcomponent"
 
 <h3>Parent Child Relation</h3>
-<_ChildComponent title="This is the title value set in parent component" OnButtonClick="SetMessage">
+<_ChildComponent title="This is the title value set in parent component" OnButtonClick="SetMessage" MessageForGrandChild="This message is from your grand parent (ParentComponent)">
     <ChildContent>This is passed in between child component from parent component</ChildContent>
     <DangerContent>This is Danger Content</DangerContent>
 </_ChildComponent>
