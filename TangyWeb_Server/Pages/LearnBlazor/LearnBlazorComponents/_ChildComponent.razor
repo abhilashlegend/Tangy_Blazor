@@ -6,6 +6,12 @@
         <span>@ChildContent</span>
     </div>
 }
+@if(DangerContent != null)
+{
+    <div class="alert alert-danger">
+        <span>@DangerContent</span>
+    </div>
+}
 <p><button class="btn btn-outline-primary" @onclick="OnButtonClick">Click me!</button></p>
 
 
@@ -16,6 +22,9 @@
 
     [Parameter]
     public RenderFragment ChildContent { get; set;  }
+
+    [Parameter]
+    public RenderFragment DangerContent { get; set; }
 
     [Parameter]
     public EventCallback OnButtonClick { get; set; }
