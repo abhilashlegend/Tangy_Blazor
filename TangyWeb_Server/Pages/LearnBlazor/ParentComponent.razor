@@ -1,10 +1,12 @@
 ﻿@page "/learnblazor/parentcomponent"
 
 <h3>Parent Child Relation</h3>
-<_ChildComponent title="This is the title value set in parent component" OnButtonClick="SetMessage" MessageForGrandChild="This message is from your grand parent (ParentComponent)">
+<CascadingValue Value="@MessageForGrandChild">
+<_ChildComponent title="This is the title value set in parent component" OnButtonClick="SetMessage">
     <ChildContent>This is passed in between child component from parent component</ChildContent>
     <DangerContent>This is Danger Content</DangerContent>
 </_ChildComponent>
+</CascadingValue>
 <div class="alert alert-success">
     @Message
 </div>
@@ -16,6 +18,7 @@
 @code {
     public string Message = "";
 
+    public string MessageForGrandChild = "This is message to send to Grand Child";
 
     public Dictionary<string, object> ParentAttributes = new Dictionary<string, object>()
     {
