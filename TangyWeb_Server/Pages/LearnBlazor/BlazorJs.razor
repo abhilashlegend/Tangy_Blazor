@@ -39,11 +39,11 @@
 
     private async Task TestSuccess()
     {
-      await _JSRuntime.InvokeVoidAsync("ShowToastr", "success", "This is success message demo");
+        await _JSRuntime.ToastrSuccess("This is success message demo");
     }
 
     private async Task TestError()
     {
-       await _JSRuntime.InvokeVoidAsync("ShowToastr", "error", "This is error message demo");
+        await _JSRuntime.ToastrError("This is error message demo");
     }
 }
