@@ -57,6 +57,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "G:\\Myprograms\\dotnet\\Tangy\\TangyWeb_Server\\wwwroot\\js\\common.js",
+      "PackagePath": "staticwebassets\\js\\common.js"
+    },
+    {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.TangyWeb_Server.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
