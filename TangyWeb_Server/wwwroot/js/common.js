@@ -6,3 +6,21 @@
         toastr.error(message, "Operation Failed", { timeOut: 5000 } )
     }
 }
+
+window.SweetAlert = (type, message) => {
+    if (type === "success") {
+        Swal.fire({
+            icon: 'success',
+            title: 'Success',
+            text: message
+        })
+    }
+
+    if (type === "error") {
+        Swal.fire({
+            icon: 'error',
+            title: 'Error',
+            text: message
+        })
+    }
+}

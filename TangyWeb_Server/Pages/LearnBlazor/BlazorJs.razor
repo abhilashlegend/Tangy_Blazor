@@ -3,16 +3,25 @@
 
 <h3>BlazorJs</h3>
 
-<div class="row">
+<div class="row mt-2">
     <button class="btn btn-secondary" @onclick="TestConfirmBox">Test Confirm Box</button>
 </div>
 
-<div class="row">
+<div class="row mt-2">
     <div class="col-sm-6">
-        <button class="btn btn-success" @onclick="TestSuccess">Success Message</button>
+        <button class="btn btn-success w-100" @onclick="TestSuccess">Success Message</button>
     </div>
     <div class="col-sm-6">
-        <button class="btn btn-danger" @onclick="TestError">Error Message</button>
+        <button class="btn btn-danger w-100" @onclick="TestError">Error Message</button>
+    </div>
+</div>
+
+<div class="row mt-2">
+    <div class="col-sm-6">
+        <button class="btn btn-success" @onclick="SweetSuccess">Success Alert</button>
+    </div>
+    <div class="col-sm-6">
+        <button class="btn btn-danger" @onclick="SweetError">Error Alert</button>
     </div>
 </div>
 
@@ -45,5 +54,15 @@
     private async Task TestError()
     {
         await _JSRuntime.ToastrError("This is error message demo");
+    }
+
+    private async Task SweetSuccess()
+    {
+        await _JSRuntime.InvokeVoidAsync("SweetAlert", "success", "This is demo success message");
+    }
+
+    private async Task SweetError()
+    {
+        await _JSRuntime.InvokeVoidAsync("SweetAlert", "error", "This is demo error message");
     }
 }
