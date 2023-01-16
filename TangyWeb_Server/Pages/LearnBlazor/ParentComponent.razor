@@ -3,7 +3,7 @@
 <h3>Parent Child Relation</h3>
 <CascadingValue Value="@MessageForGrandChild" Name="message">
     <CascadingValue Value="@LuckyNumber" Name="number">
-        <_ChildComponent title="This is the title value set in parent component" OnButtonClick="SetMessage">
+        <_ChildComponent @ref="ChildComp" title="This is the title value set in parent component" OnButtonClick="SetMessage">
             <ChildContent>This is passed in between child component from parent component</ChildContent>
             <DangerContent>This is Danger Content</DangerContent>
         </_ChildComponent>
@@ -17,7 +17,15 @@
 
 </_AnotherChildComponent>
 
+<div class="row">
+    <div class="col-sm-12">
+        <button @onclick="() => ChildComp.ShowToastr()">Show message</button>
+    </div>
+</div>
+
 @code {
+    private _ChildComponent ChildComp;
+
     public string Message = "";
 
     public string MessageForGrandChild = "This is message to send to Grand Child";

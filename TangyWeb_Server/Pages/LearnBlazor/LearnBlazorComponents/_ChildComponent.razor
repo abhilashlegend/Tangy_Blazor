@@ -1,4 +1,5 @@
-﻿
+﻿@inject IJSRuntime _JSRuntime
+
 <h4>@Title</h4>
 @if (ChildContent != null)
 {
@@ -20,7 +21,7 @@
 
 
 @code {
-    
+
     [Parameter]
     public string Title { get; set;  }
 
@@ -32,4 +33,9 @@
 
     [Parameter]
     public EventCallback OnButtonClick { get; set; }
+
+    public async Task ShowToastr()
+    {
+        await _JSRuntime.ToastrSuccess("This is test success message in child component invoked from parent component");
+    }
 }

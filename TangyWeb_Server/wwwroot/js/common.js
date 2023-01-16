@@ -5,6 +5,9 @@
     if (type === "error") {
         toastr.error(message, "Operation Failed", { timeOut: 5000 } )
     }
+    if (type === "info") {
+        toastr.info(message, "Info:", { timeOut: 10000 })
+    }
 }
 
 window.SweetAlert = (type, message) => {
@@ -23,4 +26,6 @@ window.SweetAlert = (type, message) => {
             text: message
         })
     }
+
+
 }
