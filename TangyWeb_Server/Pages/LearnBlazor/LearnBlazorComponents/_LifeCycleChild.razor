@@ -1,0 +1,18 @@
+﻿<h3>_LifeCycleChild</h3>
+
+@foreach(var item in EventLog)
+{
+    @item
+    <hr />
+}
+
+@code {
+    private List<string> EventLog = new List<string>();
+
+    protected override void OnInitialized()
+    {
+        EventLog.Add("Child - Oninitialized Life Cycle called");
+    }
+
+
+}
