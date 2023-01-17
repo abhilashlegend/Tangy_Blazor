@@ -9,10 +9,22 @@
 @code {
     private List<string> EventLog = new List<string>();
 
+    [Parameter]
+    public int CounterValue { get; set; }
+
     protected override void OnInitialized()
     {
         EventLog.Add("Child - Oninitialized Life Cycle called");
     }
 
+    protected override void OnParametersSet()
+    {
+        EventLog.Add("Child - Onparameters set life cycle called");
+    }
 
+    protected override async Task OnParametersSetAsync()
+    {
+        EventLog.Add("Child - OnParameters Set Async life cycle called");
+        await Task.Delay(1000);
+    }
 }

@@ -13,7 +13,7 @@
     <hr />
 }
 
-<_LifeCycleChild></_LifeCycleChild>
+<_LifeCycleChild CounterValue="@Counter"></_LifeCycleChild>
 
 
 @code {
@@ -34,6 +34,17 @@
     protected override async Task OnInitializedAsync()
     {
         EventType.Add("OnInitializedAsync is called");
+        await Task.Delay(1000);
+    }
+
+    protected override void OnParametersSet()
+    {
+        EventType.Add("OnParametersSet is called");
+    }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        EventType.Add("OnParameterSetAsync is called");
         await Task.Delay(1000);
     }
 }
