@@ -1,11 +1,15 @@
 ﻿@page "/learnblazor/lifecycle"
-
+@inject IJSRuntime _JSRunTime;
+@using System.Threading;
 
 <h3>LifeCycle</h3>
 
 <p role="status">Current Count: @Counter</p>
 
 <p><button class="btn btn-primary" @onclick="IncrementCounter">Click me</button></p>
+
+<p>@Count</p>
+<p><button @onclick="StartCountDown">Start Countdown</button></p>
 
 @foreach(var item in EventType)
 {
@@ -20,6 +24,8 @@
     private int Counter { get; set; } = 0;
 
     List<string> EventType = new List<string>();
+
+    private int Count { get; set; } = 10;
 
     private void IncrementCounter()
     {
@@ -46,5 +52,45 @@
     {
         EventType.Add("OnParameterSetAsync is called");
         await Task.Delay(1000);
+    }
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        if (firstRender)
+        {
+            Counter = 111;
+
+        }
+        else
+        {
+            Counter = 999;
+        }
+        EventType.Add("OnAfterRender is called");
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        EventType.Add("OnAfterRenderAsync is called");
+        await _JSRunTime.InvokeVoidAsync("console.log", Counter);
+    }
+
+    protected override bool ShouldRender()
+    {
+        EventType.Add("ShouldRender is called");
+        return true;
+    }
+
+    void StartCountDown()
+    {
+        var timer = new Timer(TimeCallback, null, 1000, 1000);
+    }
+
+    void TimeCallback(object state)
+    {
+        if(Count > 0)
+        {
+            Count--;
+            InvokeAsync(StateHasChanged);
+        }
     }
 }
