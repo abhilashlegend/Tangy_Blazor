@@ -1,0 +1,12 @@
+G:\Myprograms\dotnet\Tangy\Tangy_Common\bin\Debug\net6.0\Tangy_Common.deps.json
+G:\Myprograms\dotnet\Tangy\Tangy_Common\bin\Debug\net6.0\Tangy_Common.dll
+G:\Myprograms\dotnet\Tangy\Tangy_Common\bin\Debug\net6.0\Tangy_Common.pdb
+G:\Myprograms\dotnet\Tangy\Tangy_Common\obj\Debug\net6.0\Tangy_Common.csproj.AssemblyReference.cache
+G:\Myprograms\dotnet\Tangy\Tangy_Common\obj\Debug\net6.0\Tangy_Common.GeneratedMSBuildEditorConfig.editorconfig
+G:\Myprograms\dotnet\Tangy\Tangy_Common\obj\Debug\net6.0\Tangy_Common.AssemblyInfoInputs.cache
+G:\Myprograms\dotnet\Tangy\Tangy_Common\obj\Debug\net6.0\Tangy_Common.AssemblyInfo.cs
+G:\Myprograms\dotnet\Tangy\Tangy_Common\obj\Debug\net6.0\Tangy_Common.csproj.CoreCompileInputs.cache
+G:\Myprograms\dotnet\Tangy\Tangy_Common\obj\Debug\net6.0\Tangy_Common.dll
+G:\Myprograms\dotnet\Tangy\Tangy_Common\obj\Debug\net6.0\refint\Tangy_Common.dll
+G:\Myprograms\dotnet\Tangy\Tangy_Common\obj\Debug\net6.0\Tangy_Common.pdb
+G:\Myprograms\dotnet\Tangy\Tangy_Common\obj\Debug\net6.0\ref\Tangy_Common.dll
