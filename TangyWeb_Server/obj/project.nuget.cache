@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "NwehIv5Qt+jNeE4IjpsB3gHHFmz6RwuANE1qKA5B1daL9PSb3+dF8Izewyd+huCtLz3brVkxOLMI8sFbEgJdWg==",
+  "dgSpecHash": "k8i3TBsazxvdAbIy+nvbjUU04g4gEkjfP7sRyWvfhbwMCqHw6zbfwFq0aHna8bR5ZU6JqNDABrDD2JiUEA+qtg==",
   "success": true,
   "projectFilePath": "G:\\Myprograms\\dotnet\\Tangy\\TangyWeb_Server\\TangyWeb_Server.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Abhil\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\Abhil\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Abhil\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\Abhil\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Abhil\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
