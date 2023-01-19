@@ -61,7 +61,7 @@ namespace Tangy_Business.Repository
 
         public CategoryDTO Update(CategoryDTO objDTO)
         {
-            var objFromDb = _db.Categories.FirstOrDefault(c = >c.Id == objDTO.Id);
+            var objFromDb = _db.Categories.FirstOrDefault(c => c.Id == objDTO.Id);
             if(objFromDb != null)
             {
                 objFromDb.Name = objDTO.Name;
@@ -69,7 +69,7 @@ namespace Tangy_Business.Repository
                 _db.SaveChanges();
                 return _mapper.Map<Category, CategoryDTO>(objFromDb);
             }
-            return objFromDb;
+            return objDTO;
         }
     }
 }

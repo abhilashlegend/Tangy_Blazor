@@ -90,3 +90,7 @@ G:\Myprograms\dotnet\Tangy\TangyWeb_Server\bin\Debug\net6.0\runtimes\browser\lib
 G:\Myprograms\dotnet\Tangy\TangyWeb_Server\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 G:\Myprograms\dotnet\Tangy\TangyWeb_Server\bin\Debug\net6.0\Tangy_DataAccess.dll
 G:\Myprograms\dotnet\Tangy\TangyWeb_Server\bin\Debug\net6.0\Tangy_DataAccess.pdb
+G:\Myprograms\dotnet\Tangy\TangyWeb_Server\bin\Debug\net6.0\AutoMapper.dll
+G:\Myprograms\dotnet\Tangy\TangyWeb_Server\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+G:\Myprograms\dotnet\Tangy\TangyWeb_Server\bin\Debug\net6.0\Tangy_Business.dll
+G:\Myprograms\dotnet\Tangy\TangyWeb_Server\bin\Debug\net6.0\Tangy_Business.pdb

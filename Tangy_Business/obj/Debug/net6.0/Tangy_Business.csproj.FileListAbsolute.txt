@@ -1,0 +1,17 @@
+G:\Myprograms\dotnet\Tangy\Tangy_Business\obj\Debug\net6.0\Tangy_Business.csproj.AssemblyReference.cache
+G:\Myprograms\dotnet\Tangy\Tangy_Business\obj\Debug\net6.0\Tangy_Business.GeneratedMSBuildEditorConfig.editorconfig
+G:\Myprograms\dotnet\Tangy\Tangy_Business\obj\Debug\net6.0\Tangy_Business.AssemblyInfoInputs.cache
+G:\Myprograms\dotnet\Tangy\Tangy_Business\obj\Debug\net6.0\Tangy_Business.AssemblyInfo.cs
+G:\Myprograms\dotnet\Tangy\Tangy_Business\obj\Debug\net6.0\Tangy_Business.csproj.CoreCompileInputs.cache
+G:\Myprograms\dotnet\Tangy\Tangy_Business\bin\Debug\net6.0\Tangy_Business.deps.json
+G:\Myprograms\dotnet\Tangy\Tangy_Business\bin\Debug\net6.0\Tangy_Business.dll
+G:\Myprograms\dotnet\Tangy\Tangy_Business\bin\Debug\net6.0\Tangy_Business.pdb
+G:\Myprograms\dotnet\Tangy\Tangy_Business\bin\Debug\net6.0\Tangy_DataAccess.dll
+G:\Myprograms\dotnet\Tangy\Tangy_Business\bin\Debug\net6.0\Tangy_Models.dll
+G:\Myprograms\dotnet\Tangy\Tangy_Business\bin\Debug\net6.0\Tangy_DataAccess.pdb
+G:\Myprograms\dotnet\Tangy\Tangy_Business\bin\Debug\net6.0\Tangy_Models.pdb
+G:\Myprograms\dotnet\Tangy\Tangy_Business\obj\Debug\net6.0\Tangy_Business.csproj.CopyComplete
+G:\Myprograms\dotnet\Tangy\Tangy_Business\obj\Debug\net6.0\Tangy_Business.dll
+G:\Myprograms\dotnet\Tangy\Tangy_Business\obj\Debug\net6.0\refint\Tangy_Business.dll
+G:\Myprograms\dotnet\Tangy\Tangy_Business\obj\Debug\net6.0\Tangy_Business.pdb
+G:\Myprograms\dotnet\Tangy\Tangy_Business\obj\Debug\net6.0\ref\Tangy_Business.dll
