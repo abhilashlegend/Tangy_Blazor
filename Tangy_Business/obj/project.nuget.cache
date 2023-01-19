@@ -1,13 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "3M3FU8W6wUWLfGKXNFZzx1JiqFzgIxY0j/fXMVhhhi9sMfDN50sDswXaCbRDuTbJKl4s9I/DWP/5tdeH4adZbg==",
+  "dgSpecHash": "/ocVkwugZKU+Uh6cohe1H9HIUO/4ULaznYoWDGS2rVrNqW5YYN1g5rezsQ3zk/Yv0uiFVSAIIOBFag/B99f6hg==",
   "success": true,
   "projectFilePath": "G:\\Myprograms\\dotnet\\Tangy\\Tangy_Business\\Tangy_Business.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Abhil\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Abhil\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Abhil\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\Abhil\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
-    "C:\\Users\\Abhil\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\Abhil\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Abhil\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.1\\microsoft.data.sqlclient.5.0.1.nupkg.sha512",
     "C:\\Users\\Abhil\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.0.1\\microsoft.data.sqlclient.sni.runtime.5.0.1.nupkg.sha512",
     "C:\\Users\\Abhil\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.2\\microsoft.entityframeworkcore.7.0.2.nupkg.sha512",

@@ -1,14 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "EjIsqQ3k1bQWEIEKDXiwyPfRDrPUKqkuPkvtyZaOuVUqe9Q0nR+wkBK+NirPwVe98YnDTEi4ZWw6iNsNT0r3yg==",
+  "dgSpecHash": "NwehIv5Qt+jNeE4IjpsB3gHHFmz6RwuANE1qKA5B1daL9PSb3+dF8Izewyd+huCtLz3brVkxOLMI8sFbEgJdWg==",
   "success": true,
   "projectFilePath": "G:\\Myprograms\\dotnet\\Tangy\\TangyWeb_Server\\TangyWeb_Server.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Abhil\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\Abhil\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\Abhil\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Abhil\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\Abhil\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Abhil\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
-    "C:\\Users\\Abhil\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\Abhil\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Abhil\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.1\\microsoft.data.sqlclient.5.0.1.nupkg.sha512",
     "C:\\Users\\Abhil\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.0.1\\microsoft.data.sqlclient.sni.runtime.5.0.1.nupkg.sha512",
     "C:\\Users\\Abhil\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.2\\microsoft.entityframeworkcore.7.0.2.nupkg.sha512",
