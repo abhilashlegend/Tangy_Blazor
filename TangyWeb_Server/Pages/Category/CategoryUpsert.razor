@@ -1,4 +1,6 @@
 ﻿@page "/category/create"
+@inject ICategoryRepository _IcategoryRepository
+@inject NavigationManager _NavManager
 
 <div class="row my-2">
     <div class="col-12">
@@ -28,6 +30,7 @@
 
     private void UpsertCategory()
     {
-        Category.Name = "Button clicked";
+        _IcategoryRepository.Create(Category);
+        _NavManager.NavigateTo("/category");
     }
 }

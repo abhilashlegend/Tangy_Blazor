@@ -1,4 +1,5 @@
 ﻿@page "/category"
+@inject ICategoryRepository _ICategoryRepository
 
 <div class="row mt-4">
     <div class="col-lg-6">
@@ -8,6 +9,36 @@
         <a href="/category/create" class="btn btn-primary form-control">Create Category</a>
     </div>
 </div>
-@code {
 
+<div class="row">
+    <div class="col-sm-12">
+        @if (Categories.Any())
+        {
+            <table class="table table-bordered table-light">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach(var category in Categories)
+                    {
+                        <tr>
+                            <td>@category.Name</td>
+                            <td><a href="category/create" class="btn btn-primary">Edit</a></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }     
+    </div>
+</div>
+@code {
+    private IEnumerable<CategoryDTO> Categories = new List<CategoryDTO>(); 
+
+    protected override void OnInitialized()
+    {
+        Categories = _ICategoryRepository.GetAll();
+    }
 }
