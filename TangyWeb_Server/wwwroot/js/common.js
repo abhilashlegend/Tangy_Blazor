@@ -29,3 +29,14 @@ window.SweetAlert = (type, message) => {
 
 
 }
+
+
+
+function showDeleteDialog() {
+    
+    $("#deleteModal").modal('show');
+}
+
+function hideDeleteDialog() {
+    $("#deleteModal").modal('hide');
+}

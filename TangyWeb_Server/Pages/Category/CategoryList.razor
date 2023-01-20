@@ -1,5 +1,8 @@
 ﻿@page "/category"
 @inject ICategoryRepository _ICategoryRepository
+@inject IJSRuntime _IJSRuntime
+
+<DeleteModal></DeleteModal>
 
 <div class="row mt-4">
     <div class="col-lg-6">
@@ -34,7 +37,10 @@
                     {
                         <tr>
                             <td>@category.Name</td>
-                                <td><NavLink href="@($"/category/edit/{category.Id}")" class="btn btn-primary">Edit</NavLink></td>
+                                <td>
+                                    <NavLink href="@($"/category/edit/{category.Id}")" class="btn btn-primary">Edit</NavLink>
+                                    <button class="btn btn-danger" @onclick="() => DeleteCategory(category.Id)">Delete</button>
+                                </td>
                         </tr>
                     }
                 </tbody>
@@ -53,6 +59,8 @@
 
     private bool Loading { get; set; } = true;
 
+    private int DeleteCategoryId { get; set; } = 0;
+
     protected override async Task OnInitializedAsync()
     {
         await Task.Run(LoadCategories);
@@ -62,5 +70,11 @@
     {
         Categories = _ICategoryRepository.GetAll();
         Loading = false;
+    }
+
+    private async Task DeleteCategory(int id)
+    {
+        DeleteCategoryId = id;
+        await _IJSRuntime.InvokeVoidAsync("showDeleteDialog",DeleteCategoryId);
     }
 }

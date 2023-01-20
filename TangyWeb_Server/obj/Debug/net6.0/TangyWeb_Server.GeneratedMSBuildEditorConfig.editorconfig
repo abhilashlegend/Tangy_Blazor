@@ -88,6 +88,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVhcm5CbGF6b3JcUGFyZW50Q29tcG9uZW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[G:/Myprograms/dotnet/Tangy/TangyWeb_Server/Shared/DeleteModal.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERlbGV0ZU1vZGFsLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [G:/Myprograms/dotnet/Tangy/TangyWeb_Server/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
