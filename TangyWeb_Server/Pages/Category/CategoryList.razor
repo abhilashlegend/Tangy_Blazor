@@ -12,6 +12,14 @@
 
 <div class="row">
     <div class="col-sm-12">
+        @if(Loading)
+        {
+            <div class="d-flex align-items-center justify-content-center">
+                <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+            </div>
+        } 
+        else { 
+
         @if (Categories.Any())
         {
             <table class="table table-bordered table-light">
@@ -31,14 +39,28 @@
                     }
                 </tbody>
             </table>
-        }     
+            }
+            else
+            {
+                <div class="alert alert-info"> There are no records </div>
+            }
+        }
+        
     </div>
 </div>
 @code {
-    private IEnumerable<CategoryDTO> Categories = new List<CategoryDTO>(); 
+    private IEnumerable<CategoryDTO> Categories = new List<CategoryDTO>();
 
-    protected override void OnInitialized()
+    private bool Loading { get; set; } = true;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await Task.Run(LoadCategories);
+    }
+
+    private void LoadCategories()
     {
         Categories = _ICategoryRepository.GetAll();
+        Loading = false;
     }
 }
