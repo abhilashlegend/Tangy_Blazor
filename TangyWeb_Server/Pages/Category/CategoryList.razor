@@ -34,7 +34,7 @@
                     {
                         <tr>
                             <td>@category.Name</td>
-                            <td><a href="category/create" class="btn btn-primary">Edit</a></td>
+                                <td><NavLink href="@($"/category/edit/{category.Id}")" class="btn btn-primary">Edit</NavLink></td>
                         </tr>
                     }
                 </tbody>

@@ -1,32 +1,69 @@
 ﻿@page "/category/create"
+@page "/category/edit/{id:int}"
+
 @inject ICategoryRepository _IcategoryRepository
 @inject NavigationManager _NavManager
 
 <div class="row my-2">
     <div class="col-12">
         <h3 class="card-title text-primary mb-3 ml-3">@Title Category</h3>
-
-        <EditForm Model="Category" OnValidSubmit="UpsertCategory">
-            <DataAnnotationsValidator />
-            @*<ValidationSummary />*@
-
-            <div class="form-group">
-                <label>Name</label>
-                <InputText @bind-Value="Category.Name" class="form-control w-50"></InputText>
-                <ValidationMessage For="() => Category.Name"></ValidationMessage>
+        @if (IsLoading)
+        {
+            <div class="d-flex align-items-center justify-content-center">
+                <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
             </div>
-            <div class="form-group py-2">
-                <button type="submit" class="btn btn-success me-2">@Title</button>
-                <a href="/category" class="btn btn-secondary">Back to List</a>
-            </div>
-        </EditForm>
+        }
+        else
+        {
+            <EditForm Model="Category" OnValidSubmit="UpsertCategory">
+                <DataAnnotationsValidator />
+                @*<ValidationSummary />*@
+
+                <div class="form-group">
+                    <label>Name</label>
+                    <InputText @bind-Value="Category.Name" class="form-control w-50"></InputText>
+                    <ValidationMessage For="() => Category.Name"></ValidationMessage>
+                </div>
+                <div class="form-group py-2">
+                    <button type="submit" class="btn btn-success me-2">@Title</button>
+                    <a href="/category" class="btn btn-secondary">Back to List</a>
+                </div>
+            </EditForm>
+        }
+        
     </div>
 </div>
 
 @code {
+    [Parameter]
+    public int id { get; set; }
+
     private string Title { get; set; } = "Create";
 
     private CategoryDTO Category { get; set; } = new CategoryDTO();
+
+    private bool IsLoading { get; set; } = true;
+
+    protected override async Task OnInitializedAsync()
+    {
+        if(id == 0)
+        {
+            IsLoading = false;
+
+        }
+        else
+        {
+            Title = "Edit";
+            await Task.Run(LoadCategory);
+        }
+       
+    }
+
+    private void LoadCategory()
+    {
+        Category = _IcategoryRepository.Get(id);
+        IsLoading = false;
+    }
 
     private void UpsertCategory()
     {
