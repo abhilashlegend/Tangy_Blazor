@@ -2,7 +2,7 @@
 @inject ICategoryRepository _ICategoryRepository
 @inject IJSRuntime _IJSRuntime
 
-<DeleteModal></DeleteModal>
+<DeleteModal @ref="deleteModal" OnButtonClick="ConfirmDeleteClicked"></DeleteModal>
 
 <div class="row mt-4">
     <div class="col-lg-6">
@@ -57,6 +57,8 @@
 @code {
     private IEnumerable<CategoryDTO> Categories = new List<CategoryDTO>();
 
+    private DeleteModal deleteModal;
+
     private bool Loading { get; set; } = true;
 
     private int DeleteCategoryId { get; set; } = 0;
@@ -76,5 +78,15 @@
     {
         DeleteCategoryId = id;
         await _IJSRuntime.InvokeVoidAsync("showDeleteDialog",DeleteCategoryId);
+    }
+
+    public async Task ConfirmDeleteClicked(bool isConfirmed)
+    {
+        if (isConfirmed)
+        {
+            _ICategoryRepository.Delete(DeleteCategoryId);
+            LoadCategories();
+            await _IJSRuntime.InvokeVoidAsync("hideDeleteDialog");
+        }
     }
 }
