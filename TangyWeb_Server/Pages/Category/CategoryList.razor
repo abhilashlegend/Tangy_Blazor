@@ -2,7 +2,7 @@
 @inject ICategoryRepository _ICategoryRepository
 @inject IJSRuntime _IJSRuntime
 
-<DeleteModal @ref="deleteModal" OnButtonClick="ConfirmDeleteClicked"></DeleteModal>
+<DeleteModal IsParentComponentProcessing="Loading" OnButtonClick="ConfirmDeleteClicked"></DeleteModal>
 
 <div class="row mt-4">
     <div class="col-lg-6">
@@ -82,11 +82,13 @@
 
     public async Task ConfirmDeleteClicked(bool isConfirmed)
     {
-        if (isConfirmed)
+        Loading = true;
+        if (isConfirmed && DeleteCategoryId != 0)
         {
             _ICategoryRepository.Delete(DeleteCategoryId);
             LoadCategories();
             await _IJSRuntime.InvokeVoidAsync("hideDeleteDialog");
         }
+        Loading = false;
     }
 }

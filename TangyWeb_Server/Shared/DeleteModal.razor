@@ -8,10 +8,21 @@
             <div class="modal-body">
                 <p>Do you really want to Delete?</p>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" @onclick="() => OnConfirmationDelete(false)" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-danger" @onclick="() => OnConfirmationDelete(true)">Confirm</button>
-            </div>
+            @if (IsParentComponentProcessing)
+            {
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" @onclick="() => OnConfirmationDelete(false)" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger" @onclick="() => OnConfirmationDelete(true)">Processing...</button>
+                </div>
+            }
+            else
+            {
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" @onclick="() => OnConfirmationDelete(false)" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger" @onclick="() => OnConfirmationDelete(true)">Confirm</button>
+                </div>
+            }
+            
         </div>
     </div>
 </div>
@@ -20,6 +31,9 @@
 
     [Parameter]
     public EventCallback<bool> OnButtonClick { get; set; }
+
+    [Parameter]
+    public bool IsParentComponentProcessing { get; set; }
 
     private async Task OnConfirmationDelete(bool value)
     {
