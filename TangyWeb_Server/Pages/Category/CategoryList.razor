@@ -67,16 +67,16 @@
     {
         if (firstRender)
         {
-            LoadCategories();
+            await LoadCategories();
         }
 
     }
 
-    private void LoadCategories()
+    private async Task LoadCategories()
     {
         Loading = true;
         StateHasChanged();
-        Categories = _ICategoryRepository.GetAll();
+        Categories = await _ICategoryRepository.GetAll();
         Loading = false;
         StateHasChanged();
     }
@@ -92,8 +92,8 @@
         Loading = true;
         if (isConfirmed && DeleteCategoryId != 0)
         {
-            _ICategoryRepository.Delete(DeleteCategoryId);
-            LoadCategories();
+            await _ICategoryRepository.Delete(DeleteCategoryId);
+            await LoadCategories();
             await _IJSRuntime.InvokeVoidAsync("hideDeleteDialog");
         }
         Loading = false;
