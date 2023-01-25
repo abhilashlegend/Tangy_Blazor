@@ -59,19 +59,26 @@
 
     private DeleteModal deleteModal;
 
-    private bool Loading { get; set; } = true;
+    private bool Loading { get; set; }
 
     private int DeleteCategoryId { get; set; } = 0;
 
-    protected override async Task OnInitializedAsync()
+    protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        await Task.Run(LoadCategories);
+        if (firstRender)
+        {
+            LoadCategories();
+        }
+
     }
 
     private void LoadCategories()
     {
+        Loading = true;
+        StateHasChanged();
         Categories = _ICategoryRepository.GetAll();
         Loading = false;
+        StateHasChanged();
     }
 
     private async Task DeleteCategory(int id)
