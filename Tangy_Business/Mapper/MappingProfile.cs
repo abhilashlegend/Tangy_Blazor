@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Tangy_DataAccess;
+using Tangy_DataAccess.Data;
 using Tangy_Models;
 
 namespace Tangy_Business.Mapper
@@ -14,6 +15,7 @@ namespace Tangy_Business.Mapper
         public MappingProfile() {
             CreateMap<Category, CategoryDTO>().ReverseMap();
          //   CreateMap<CategoryDTO, Category>();
+            CreateMap<Product, ProductDTO>().ReverseMap();
         }
     }
 }
