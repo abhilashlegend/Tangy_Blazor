@@ -1,0 +1,96 @@
+﻿@page "/products"
+@inject IProductRepository _IProductRepository
+@inject IJSRuntime _IJSRuntime
+
+
+<DeleteModal IsParentComponentProcessing="Loading" OnButtonClick="ConfirmDeleteClicked"></DeleteModal>
+<div class="row mt-4">
+    <div class="col-6">
+        <h4 class="card-title text-primary">Product List</h4>
+    </div>
+    <div class="col-4 offset-2">
+        <a href="category/create" class="btn btn-primary form-control">Add New Product</a>
+    </div>
+    <div class="col-12 p-3">
+        @if (Products.Any())
+        {
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Shop Favorites</th>
+                        <th>Customer Favorites</th>
+                        <th>Category</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach(var prod in Products)
+                    {
+                        <tr>
+                            <td>@prod.Name</td>
+                            <td>
+                                <input type="checkbox" disabled checked="@prod.ShopFavourites" />
+                            </td>
+                            <td>
+                                <input type="checkbox" disabled checked="@prod.CustomerFavourites" />
+                            </td>
+                            <td>@prod.Category.Name</td>
+                            <td>
+                                <NavLink href="@($"/product/edit/{prod.Id}")" class="btn btn-primary">Edit</NavLink>
+                                <button class="btn btn-danger" @onclick="() => DeleteCategory(prod.Id)">Delete</button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+    </div>
+</div>
+
+@code {
+    private IEnumerable<ProductDTO> Products = new List<ProductDTO>();
+
+    private int DeleteProductId { get; set; }
+
+    private DeleteModal deleteModal;
+
+    private bool Loading { get; set; }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await LoadCategories();
+        }
+
+    }
+
+    private async Task LoadCategories()
+    {
+        Loading = true;
+        StateHasChanged();
+        Products = await _IProductRepository.GetAll();
+        Loading = false;
+        StateHasChanged();
+    }
+
+    private async Task DeleteCategory(int id)
+    {
+        DeleteProductId = id;
+        await _IJSRuntime.InvokeVoidAsync("showDeleteDialog", DeleteProductId);
+    }
+
+    public async Task ConfirmDeleteClicked(bool isConfirmed)
+    {
+        Loading = true;
+        if (isConfirmed && DeleteProductId != 0)
+        {
+            await _IProductRepository.Delete(DeleteProductId);
+            await LoadCategories();
+            await _IJSRuntime.InvokeVoidAsync("hideDeleteDialog");
+        }
+        Loading = false;
+    }
+
+}
