@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Tangy_DataAccess.Data;
 
 namespace Tangy_DataAccess
 {
@@ -16,5 +17,7 @@ namespace Tangy_DataAccess
         }
 
         public DbSet<Category> Categories { get; set; } 
+        public DbSet<Product> Products { get; set; }
     }
 }
+    
