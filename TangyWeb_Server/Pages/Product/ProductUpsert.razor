@@ -7,7 +7,7 @@
 
 <div class="row my-2">
     <div class="col-12">
-        <h3 class="card-title text-primary mb-3 ml-3">@Title Category</h3>
+        <h3 class="card-title text-primary mb-3 ml-3">@Title Product</h3>
         @if (IsLoading)
         {
             <div class="d-flex align-items-center justify-content-center">
@@ -36,22 +36,33 @@
                     <ValidationMessage For="() => Product.Description"></ValidationMessage>
                 </div>
                 <div class="row pt-3">
-                    <div class="btn-group col-6">
+                    <div class="form-group col-6">
                         <div class="form-check">
                             <InputCheckbox @bind-Value="Product.ShopFavorites" class="form-check-input"></InputCheckbox>
                             <label class="form-check-label">Is Shop Favorites</label>
                         </div>
                     </div>
-                    <div class="btn-group col-6">
+                    <div class="form-group col-6">
                         <div class="form-check">
                             <InputCheckbox @bind-Value="Product.CustomerFavorites" class="form-check-input"></InputCheckbox>
                             <label class="form-check-label">Is Customer Favorites</label>
                         </div>
                     </div>
+                    <div class="form-group col-6">
+                        <label>Category</label>
+                        <InputSelect @bind-Value="Product.CategoryId" class="form-select">
+                            <option value="0" disabled="disabled" selected>--Select Category--</option>
+                            @foreach(var cat in Categories)
+                            {
+                                <option value="@cat.Id">@cat.Name</option>
+                            }
+                        </InputSelect>
+                        <ValidationMessage For="() => Product.CategoryId"></ValidationMessage>
+                    </div>
                 </div>
                 <div class="form-group py-2">
                     <button type="submit" class="btn btn-success me-2">@Title</button>
-                    <NavLink href="/product" class="btn btn-secondary">Back to List</NavLink>
+                    <NavLink href="/products" class="btn btn-secondary">Back to List</NavLink>
                 </div>
             </EditForm>
         }
@@ -74,16 +85,8 @@
     {
         if (firstrender)
         {
-            if (id == 0)
-            {
-                IsLoading = false;
-
-            }
-            else
-            {
                 Title = "Edit";
                 await LoadProduct();
-            }
         }
 
 
