@@ -16,8 +16,8 @@ namespace Tangy_Models
 
         [Required]
         public string Description { get; set; }
-        public bool ShopFavourites { get; set; }
-        public bool CustomerFavourites { get; set; }
+        public bool ShopFavorites { get; set; }
+        public bool CustomerFavorites { get; set; }
 
         public string Color { get; set; }
 

@@ -14,8 +14,8 @@ namespace Tangy_DataAccess.Data
         public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public bool ShopFavourites { get; set; }
-        public bool CustomerFavourites { get; set; }
+        public bool ShopFavorites { get; set; }
+        public bool CustomerFavorites { get; set; }
         public string Color { get; set; }
         public string ImageUrl { get; set; }
 
