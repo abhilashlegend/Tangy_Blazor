@@ -1,5 +1,122 @@
-﻿<h3>ProductUpsert</h3>
+﻿@page "/product/create"
+@page "/product/edit/{id:int}"
+
+@inject ICategoryRepository _IcategoryRepository
+@inject IProductRepository _IproductRepository
+@inject NavigationManager _NavManager
+
+<div class="row my-2">
+    <div class="col-12">
+        <h3 class="card-title text-primary mb-3 ml-3">@Title Category</h3>
+        @if (IsLoading)
+        {
+            <div class="d-flex align-items-center justify-content-center">
+                <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+            </div>
+        }
+        else
+        {
+            <EditForm Model="Product" OnValidSubmit="UpsertProduct">
+                <DataAnnotationsValidator />
+                @*<ValidationSummary />*@
+
+                <div class="form-group">
+                    <label>Name</label>
+                    <InputText @bind-Value="Product.Name" class="form-control w-50"></InputText>
+                    <ValidationMessage For="() => Product.Name"></ValidationMessage>
+                </div>
+                <div class="form-group">
+                    <label>Color</label>
+                    <InputText @bind-Value="Product.Color" class="form-control w-50"></InputText>
+                    <ValidationMessage For="() => Product.Color"></ValidationMessage>
+                </div>
+                <div class="form-group">
+                    <label>Description</label>
+                    <InputTextArea @bind-Value="Product.Description" class="form-control w-50"></InputTextArea>
+                    <ValidationMessage For="() => Product.Description"></ValidationMessage>
+                </div>
+                <div class="row pt-3">
+                    <div class="btn-group col-6">
+                        <div class="form-check">
+                            <InputCheckbox @bind-Value="Product.ShopFavourites" class="form-check-input"></InputCheckbox>
+                            <label class="form-check-label">Is Shop Favorites</label>
+                        </div>
+                    </div>
+                    <div class="btn-group col-6">
+                        <div class="form-check">
+                            <InputCheckbox @bind-Value="Product.CustomerFavourites" class="form-check-input"></InputCheckbox>
+                            <label class="form-check-label">Is Customer Favorites</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group py-2">
+                    <button type="submit" class="btn btn-success me-2">@Title</button>
+                    <NavLink href="/product" class="btn btn-secondary">Back to List</NavLink>
+                </div>
+            </EditForm>
+        }
+
+    </div>
+</div>
 
 @code {
+    [Parameter]
+    public int id { get; set; }
 
+    private string Title { get; set; } = "Create";
+
+    private ProductDTO Product { get; set; } = new();
+    private IEnumerable<CategoryDTO> Categories { get; set; } = new List<CategoryDTO>();
+
+    private bool IsLoading { get; set; }
+
+    protected override async Task OnAfterRenderAsync(bool firstrender)
+    {
+        if (firstrender)
+        {
+            if (id == 0)
+            {
+                IsLoading = false;
+
+            }
+            else
+            {
+                Title = "Edit";
+                await LoadProduct();
+            }
+        }
+
+
+    }
+
+    private async Task LoadProduct()
+    {
+        IsLoading = true;
+        StateHasChanged();
+        Categories = await _IcategoryRepository.GetAll();
+        if(id != 0)
+        {
+            //Update
+            Title = "Update";
+            Product = await _IproductRepository.Get(id);
+        }
+        IsLoading = false;
+        StateHasChanged();
+    }
+
+    private async Task UpsertProduct()
+    {
+        if (Product.Id == 0)
+        {
+            // Create 
+            await _IproductRepository.Create(Product);
+        }
+        else
+        {
+            // Update
+            await _IproductRepository.Update(Product);
+        }
+
+        _NavManager.NavigateTo("/product");
+    }
 }
