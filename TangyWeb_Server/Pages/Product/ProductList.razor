@@ -1,6 +1,7 @@
 ﻿@page "/products"
 @inject IProductRepository _IProductRepository
 @inject IJSRuntime _IJSRuntime
+@inject IFileUpload _fileUpload
 
 
 <DeleteModal IsParentComponentProcessing="Loading" OnButtonClick="ConfirmDeleteClicked"></DeleteModal>
@@ -45,6 +46,19 @@
                 </tbody>
             </table>
         }
+        else
+        {
+            if(Loading)
+            {
+                <div class="d-flex align-items-center justify-content-center">
+                    <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+                </div>
+            } 
+            else
+            {
+                <p>No records found.</p>    
+            }
+        }
     </div>
 </div>
 
@@ -86,7 +100,14 @@
         Loading = true;
         if (isConfirmed && DeleteProductId != 0)
         {
+            ProductDTO product = await _IProductRepository.Get(DeleteProductId);
+            if (!product.ImageUrl.Contains("default.png"))
+            {
+                _fileUpload.DeleteFile(product.ImageUrl);
+            }
+
             await _IProductRepository.Delete(DeleteProductId);
+            await _IJSRuntime.ToastrSuccess("Product Deleted successfully");
             await LoadCategories();
             await _IJSRuntime.InvokeVoidAsync("hideDeleteDialog");
         }
