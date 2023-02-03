@@ -71,6 +71,7 @@ namespace Tangy_Business.Repository
                 objFromDb.CustomerFavorites = objDTO.CustomerFavorites;
                 objFromDb.Color =  objDTO.Color;
                 objFromDb.ImageUrl = objDTO.ImageUrl;
+                objFromDb.CategoryId = objDTO.CategoryId;
                 _db.Products.Update(objFromDb);
                 await _db.SaveChangesAsync();
                 return _mapper.Map<Product, ProductDTO>(objFromDb);

@@ -1,14 +1,14 @@
 ﻿@page "/product/create"
 @page "/product/edit/{id:int}"
 
-@inject ICategoryRepository _IcategoryRepository
-@inject IProductRepository _IproductRepository
+@inject ICategoryRepository _categoryRepository
+@inject IProductRepository _productRepository
 @inject NavigationManager _NavManager
 @inject IFileUpload _fileUpload
 @inject IJSRuntime _jsRuntime
 
 <div class="row my-2">
-    <div class="col-12">
+    <div class="col-md-10">
         <h3 class="card-title text-primary mb-3 ml-3">@Title Product</h3>
         @if (IsLoading)
         {
@@ -73,6 +73,10 @@
         }
 
     </div>
+
+    <div class="col-md-2">
+        <img src="@Product.ImageUrl" class="w-100" />
+    </div>
 </div>
 
 @code {
@@ -81,7 +85,10 @@
 
     private string Title { get; set; } = "Create";
 
-    private ProductDTO Product { get; set; } = new();
+    private ProductDTO Product { get; set; } = new()
+    {
+        ImageUrl = "/images/default.png"
+    };
     private IEnumerable<CategoryDTO> Categories { get; set; } = new List<CategoryDTO>();
 
     private bool IsLoading { get; set; }
@@ -90,23 +97,20 @@
     {
         if (firstrender)
         {
-            Title = "Edit";
             await LoadProduct();
         }
-
-
     }
 
     private async Task LoadProduct()
     {
         IsLoading = true;
         StateHasChanged();
-        Categories = await _IcategoryRepository.GetAll();
+        Categories = await _categoryRepository.GetAll();
         if(id != 0)
         {
             //Update
             Title = "Update";
-            Product = await _IproductRepository.Get(id);
+            Product = await _productRepository.Get(id);
         }
         IsLoading = false;
         StateHasChanged();
@@ -117,15 +121,15 @@
         if (Product.Id == 0)
         {
             // Create 
-            await _IproductRepository.Create(Product);
+            await _productRepository.Create(Product);
         }
         else
         {
             // Update
-            await _IproductRepository.Update(Product);
+            await _productRepository.Update(Product);
         }
 
-        _NavManager.NavigateTo("/product");
+        _NavManager.NavigateTo("products");
     }
 
     private async Task HandleImageUpload(InputFileChangeEventArgs e)

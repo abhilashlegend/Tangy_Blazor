@@ -57,6 +57,26 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "G:\\Myprograms\\dotnet\\Tangy\\TangyWeb_Server\\wwwroot\\images\\default.png",
+      "PackagePath": "staticwebassets\\images\\default.png"
+    },
+    {
+      "Id": "G:\\Myprograms\\dotnet\\Tangy\\TangyWeb_Server\\wwwroot\\images\\product\\01d07b56-fff2-4fed-811c-5c8656a834f2.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\01d07b56-fff2-4fed-811c-5c8656a834f2.jpg"
+    },
+    {
+      "Id": "G:\\Myprograms\\dotnet\\Tangy\\TangyWeb_Server\\wwwroot\\images\\product\\b6d34821-bc85-453a-9df9-1328e6e98099.png",
+      "PackagePath": "staticwebassets\\images\\product\\b6d34821-bc85-453a-9df9-1328e6e98099.png"
+    },
+    {
+      "Id": "G:\\Myprograms\\dotnet\\Tangy\\TangyWeb_Server\\wwwroot\\images\\product\\cf5bdf4f-e4d6-4d25-bac1-df90df980721.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\cf5bdf4f-e4d6-4d25-bac1-df90df980721.jpg"
+    },
+    {
+      "Id": "G:\\Myprograms\\dotnet\\Tangy\\TangyWeb_Server\\wwwroot\\images\\product\\de42b8f3-490b-428c-8eec-9caacd0e1b0e.png",
+      "PackagePath": "staticwebassets\\images\\product\\de42b8f3-490b-428c-8eec-9caacd0e1b0e.png"
+    },
+    {
       "Id": "G:\\Myprograms\\dotnet\\Tangy\\TangyWeb_Server\\wwwroot\\js\\common.js",
       "PackagePath": "staticwebassets\\js\\common.js"
     },
