@@ -82,6 +82,31 @@ namespace TangyDataAccess.Migrations
                     b.ToTable("Products");
                 });
 
+            modelBuilder.Entity("Tangy_DataAccess.Data.ProductPrice", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<double>("Prize")
+                        .HasColumnType("float");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Size")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("ProductPrices");
+                });
+
             modelBuilder.Entity("Tangy_DataAccess.Data.Product", b =>
                 {
                     b.HasOne("Tangy_DataAccess.Category", "Category")
@@ -91,6 +116,22 @@ namespace TangyDataAccess.Migrations
                         .IsRequired();
 
                     b.Navigation("Category");
+                });
+
+            modelBuilder.Entity("Tangy_DataAccess.Data.ProductPrice", b =>
+                {
+                    b.HasOne("Tangy_DataAccess.Data.Product", "Product")
+                        .WithMany("ProductPrices")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("Tangy_DataAccess.Data.Product", b =>
+                {
+                    b.Navigation("ProductPrices");
                 });
 #pragma warning restore 612, 618
         }

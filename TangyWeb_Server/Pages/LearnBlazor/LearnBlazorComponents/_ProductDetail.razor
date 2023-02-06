@@ -31,7 +31,7 @@
     [Parameter]
     public EventCallback<string> OnLastSelectedProductChange { get; set; }
     
-    private async Task SetFavourite(ChangeEventArgs e)
+    private async Task SetFavourite(Microsoft.AspNetCore.Components.ChangeEventArgs e)
     {
         await onSetFavourite.InvokeAsync((bool)e.Value);
     }

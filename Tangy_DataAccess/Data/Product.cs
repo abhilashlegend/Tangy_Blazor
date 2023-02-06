@@ -24,5 +24,7 @@ namespace Tangy_DataAccess.Data
 
         public Category Category { get; set; }
 
+        public ICollection<ProductPrice> ProductPrices { get; set; }
+
     }
 }
