@@ -1,0 +1,27 @@
+﻿@page "/product/price/{Id:int}"
+@using Tangy_Business.Repository.iRepository;
+@using Tangy_Models;
+@inject IProductPriceRepository _productPriceRepository
+@inject IProductRepository _productRepository;
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+    private ProductDTO Product { get; set; } = new();
+    private IEnumerable<ProductPriceDTO> ProductPrices { get; set; } = new List<ProductPriceDTO>();
+    private bool IsLoading { get; set; }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            IsLoading = true;
+            StateHasChanged();
+            Product = await _productRepository.Get(Id);
+            ProductPrices = await _productPriceRepository.GetAll(Id);
+            IsLoading = false;
+            StateHasChanged();
+        }
+    }
+
+}
