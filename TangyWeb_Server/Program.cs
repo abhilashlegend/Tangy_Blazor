@@ -11,6 +11,8 @@ using TangyWeb_Server.Service.IService;
 
 var builder = WebApplication.CreateBuilder(args);
 
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MTA4MTYyN0AzMjMwMmUzNDJlMzBIRjlsakNESkx3aE1DMFlmRCtIQWxHdGp6dlFaUGZPTndBSHhJRVFjNmJFPQ==");
+
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();

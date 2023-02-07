@@ -34,7 +34,8 @@
                 </div>
                 <div class="form-group">
                     <label>Description</label>
-                    <InputTextArea class="form-control" @bind-Value="Product.Description"></InputTextArea>
+                    <SfRichTextEditor @bind-Value="Product.Description"></SfRichTextEditor>
+                    
                     
                     <ValidationMessage For="() => Product.Description"></ValidationMessage>
                 </div>
