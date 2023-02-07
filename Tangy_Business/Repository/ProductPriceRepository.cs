@@ -70,7 +70,7 @@ namespace Tangy_Business.Repository
             var objFromDb = await _db.ProductPrices.FirstOrDefaultAsync(c => c.Id == objDTO.Id);
             if (objFromDb != null)
             {
-                objFromDb.Prize = objDTO.Prize;
+                objFromDb.Price = objDTO.Price;
                 objFromDb.Size = objDTO.Size;
                 objFromDb.ProductId = objDTO.ProductId;
 

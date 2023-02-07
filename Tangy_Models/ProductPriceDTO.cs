@@ -17,6 +17,6 @@ namespace Tangy_Models
         public string Size { get; set; }
         [Required]
         [Range(1, int.MinValue, ErrorMessage = "Price must be greater than 1")]
-        public double Prize { get; set; }
+        public double Price { get; set; }
     }
 }

@@ -15,6 +15,6 @@ namespace Tangy_DataAccess.Data
         [ForeignKey("ProductId")]
         public Product Product { get; set; }
         public string Size { get; set; }
-        public double Prize { get; set; }
+        public double Price { get; set; }
     }
 }

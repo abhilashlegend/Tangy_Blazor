@@ -114,3 +114,7 @@ G:\Myprograms\dotnet\Tangy\TangyWeb_Server\bin\Debug\net6.0\Syncfusion.Blazor.Sp
 G:\Myprograms\dotnet\Tangy\TangyWeb_Server\bin\Debug\net6.0\Syncfusion.Blazor.Themes.dll
 G:\Myprograms\dotnet\Tangy\TangyWeb_Server\bin\Debug\net6.0\Syncfusion.Licensing.dll
 G:\Myprograms\dotnet\Tangy\TangyWeb_Server\bin\Debug\net6.0\System.IO.Pipelines.dll
+G:\Myprograms\dotnet\Tangy\TangyWeb_Server\bin\Debug\net6.0\Syncfusion.Blazor.Calendars.dll
+G:\Myprograms\dotnet\Tangy\TangyWeb_Server\bin\Debug\net6.0\Syncfusion.Blazor.Grids.dll
+G:\Myprograms\dotnet\Tangy\TangyWeb_Server\bin\Debug\net6.0\Syncfusion.ExcelExport.Net.dll
+G:\Myprograms\dotnet\Tangy\TangyWeb_Server\bin\Debug\net6.0\Syncfusion.PdfExport.Net.dll

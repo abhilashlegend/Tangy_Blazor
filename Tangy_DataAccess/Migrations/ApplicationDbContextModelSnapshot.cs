@@ -90,7 +90,7 @@ namespace TangyDataAccess.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<double>("Prize")
+                    b.Property<double>("Price")
                         .HasColumnType("float");
 
                     b.Property<int>("ProductId")
