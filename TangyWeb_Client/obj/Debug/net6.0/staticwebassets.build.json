@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "N7JAmtwe2KD9+kB/QF0s+MuMmL+/+fOxVFApLRPzREM=",
+  "Hash": "IG6+hezFHoEa8qZNpOIuQ65s7g/vyCffTDaXwjXjwRA=",
   "Source": "TangyWeb_Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -6832,6 +6832,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "G:\\Myprograms\\dotnet\\Tangy\\TangyWeb_Client\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TangyWeb_Client.bundle.scp.css"
+    },
+    {
+      "Identity": "G:\\Myprograms\\dotnet\\Tangy\\TangyWeb_Client\\wwwroot\\appsettings.json",
+      "SourceId": "TangyWeb_Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "G:\\Myprograms\\dotnet\\Tangy\\TangyWeb_Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "appsettings.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "settings",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\appsettings.json"
     },
     {
       "Identity": "G:\\Myprograms\\dotnet\\Tangy\\TangyWeb_Client\\wwwroot\\css\\app.css",

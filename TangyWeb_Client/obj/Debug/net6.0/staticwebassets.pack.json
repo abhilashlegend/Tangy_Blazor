@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\TangyWeb_Client.styles.css"
     },
     {
+      "Id": "G:\\Myprograms\\dotnet\\Tangy\\TangyWeb_Client\\wwwroot\\appsettings.json",
+      "PackagePath": "staticwebassets\\appsettings.json"
+    },
+    {
       "Id": "G:\\Myprograms\\dotnet\\Tangy\\TangyWeb_Client\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
