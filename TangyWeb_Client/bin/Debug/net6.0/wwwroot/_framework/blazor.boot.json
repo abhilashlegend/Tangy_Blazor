@@ -198,13 +198,13 @@
       "mscorlib.dll": "sha256-cx\/3nJhFns3tZhQNQOyiRyKJESKxOjLVufzWnri6KSA=",
       "netstandard.dll": "sha256-yWufW5W4SSfjocBcWTEDqnFwTd\/VYtLMc2Y9mPmlggc=",
       "System.Private.CoreLib.dll": "sha256-H009wzPwRoDZlwvpN4KLCsUwN7Y1AmjKB3PIEHA7ObQ=",
-      "TangyWeb_Client.dll": "sha256-3\/h+W4VQR4y4erK8UJPpwhg63yWUwxio9L6QW3sAmUw="
+      "TangyWeb_Client.dll": "sha256-BjkIHOuKFaES\/rw\/6KsvypbYC1XyvoWf4wq\/Ztpq9EA="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "TangyWeb_Client.pdb": "sha256-lDSWymhHVa1AhZoJ8rkdug0VM3auj2rVuoRfypNuBlk="
+      "TangyWeb_Client.pdb": "sha256-sScjdy31U9KJNnsfrfs996kqw618d2R2VAJn8gy7EcI="
     },
     "runtime": {
       "dotnet.6.0.11.2wkapo7i43.js": "sha256-F30V+6jU3jwJYFZoLuwMAqzTiOXu6q7zGgOdjYBofDI=",
