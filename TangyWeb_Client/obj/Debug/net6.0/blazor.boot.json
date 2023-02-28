@@ -31,6 +31,7 @@
       "Microsoft.Extensions.Primitives.dll": "sha256-jOmoWSfsdQexH\/6QCA56gR1RMEqeix2iDDUBWbpAOQI=",
       "Microsoft.JSInterop.dll": "sha256-Q4f+LWDtWpXnnYHUde+5rI1mzDPNsZKlAw2vLmj7x1I=",
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-o6JgCcWyug2MjyXwx54FHRaCf1DjpJzEkG2GKhlSyL4=",
+      "Newtonsoft.Json.dll": "sha256-SBbEJ29XXk2FuAYzoN8urfKUlv4AvcM814Q+YTc73g4=",
       "System.IO.Pipelines.dll": "sha256-6+E55JXedimdw1c1bDtVg4K7XuWjVWVTifH8QpfzXSY=",
       "Microsoft.CSharp.dll": "sha256-ZScUDIiTxo1dQUE6uip4qB29zPhkN4IpLP8YotBXZKA=",
       "Microsoft.VisualBasic.Core.dll": "sha256-GO2Nim3i77UgTSYVu2OkMRHAiuFQQFGvX93YzIyu7zg=",
@@ -198,13 +199,15 @@
       "mscorlib.dll": "sha256-cx\/3nJhFns3tZhQNQOyiRyKJESKxOjLVufzWnri6KSA=",
       "netstandard.dll": "sha256-yWufW5W4SSfjocBcWTEDqnFwTd\/VYtLMc2Y9mPmlggc=",
       "System.Private.CoreLib.dll": "sha256-H009wzPwRoDZlwvpN4KLCsUwN7Y1AmjKB3PIEHA7ObQ=",
-      "TangyWeb_Client.dll": "sha256-BjkIHOuKFaES\/rw\/6KsvypbYC1XyvoWf4wq\/Ztpq9EA="
+      "Tangy_Models.dll": "sha256-xxj99gPdYiIKtcYQuhAy0fyHocAm8PTcoTNyN6ImVFc=",
+      "TangyWeb_Client.dll": "sha256-rGHPItYSmGSs1OBwmmv4F\/JmsD2GQIXbGcTFIh9U2Q8="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "TangyWeb_Client.pdb": "sha256-sScjdy31U9KJNnsfrfs996kqw618d2R2VAJn8gy7EcI="
+      "Tangy_Models.pdb": "sha256-tALH6EK6hDQJeB5yLD2FtTKgFCkRCRbSH2lti0lYFnA=",
+      "TangyWeb_Client.pdb": "sha256-MAB94UyiYjKRk4QSn7YqhHXr2qobAvWCxyrnGL0GbV8="
     },
     "runtime": {
       "dotnet.6.0.11.2wkapo7i43.js": "sha256-F30V+6jU3jwJYFZoLuwMAqzTiOXu6q7zGgOdjYBofDI=",

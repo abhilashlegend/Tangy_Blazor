@@ -818,3 +818,15 @@ G:\Myprograms\dotnet\Tangy\TangyWeb_Client\obj\Debug\net6.0\TangyWeb_Client.dll
 G:\Myprograms\dotnet\Tangy\TangyWeb_Client\obj\Debug\net6.0\refint\TangyWeb_Client.dll
 G:\Myprograms\dotnet\Tangy\TangyWeb_Client\obj\Debug\net6.0\TangyWeb_Client.pdb
 G:\Myprograms\dotnet\Tangy\TangyWeb_Client\obj\Debug\net6.0\ref\TangyWeb_Client.dll
+G:\Myprograms\dotnet\Tangy\TangyWeb_Client\bin\Debug\net6.0\wwwroot\_framework\Newtonsoft.Json.dll
+G:\Myprograms\dotnet\Tangy\TangyWeb_Client\bin\Debug\net6.0\wwwroot\_framework\Tangy_Models.dll
+G:\Myprograms\dotnet\Tangy\TangyWeb_Client\bin\Debug\net6.0\wwwroot\_framework\Tangy_Models.pdb
+G:\Myprograms\dotnet\Tangy\TangyWeb_Client\bin\Debug\net6.0\wwwroot\_framework\Newtonsoft.Json.dll.gz
+G:\Myprograms\dotnet\Tangy\TangyWeb_Client\bin\Debug\net6.0\wwwroot\_framework\Tangy_Models.dll.gz
+G:\Myprograms\dotnet\Tangy\TangyWeb_Client\bin\Debug\net6.0\wwwroot\_framework\Tangy_Models.pdb.gz
+G:\Myprograms\dotnet\Tangy\TangyWeb_Client\bin\Debug\net6.0\Newtonsoft.Json.dll
+G:\Myprograms\dotnet\Tangy\TangyWeb_Client\bin\Debug\net6.0\Tangy_Models.dll
+G:\Myprograms\dotnet\Tangy\TangyWeb_Client\bin\Debug\net6.0\Tangy_Models.pdb
+G:\Myprograms\dotnet\Tangy\TangyWeb_Client\obj\Debug\net6.0\build-gz\mT1zq083.gz
+G:\Myprograms\dotnet\Tangy\TangyWeb_Client\obj\Debug\net6.0\build-gz\pdimwLqR.gz
+G:\Myprograms\dotnet\Tangy\TangyWeb_Client\obj\Debug\net6.0\build-gz\v4JtKMP1.gz
