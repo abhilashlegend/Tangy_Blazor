@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TangyWeb_Server", "TangyWeb_Server\TangyWeb_Server.csproj", "{2ECD509D-C2BD-43DE-B006-9B43A77D668D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TangyWeb_Client", "TangyWeb_Client\TangyWeb_Client.csproj", "{3EB2E013-617D-41B5-988A-82AE5EE9673F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B248BC12-9E6F-4054-9CD6-6C87B555DA4B} = {B248BC12-9E6F-4054-9CD6-6C87B555DA4B}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tangy_Models", "Tangy_Models\Tangy_Models.csproj", "{B74ABDAC-015A-42EB-88D2-E5FBF7BFCE5A}"
 EndProject
@@ -15,7 +18,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tangy_DataAccess", "Tangy_D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tangy_Common", "Tangy_Common\Tangy_Common.csproj", "{B248BC12-9E6F-4054-9CD6-6C87B555DA4B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TangyWeb_API", "TangyWeb_API\TangyWeb_API.csproj", "{0A068D8B-13CC-48EA-B9BD-A76C8E18895F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TangyWeb_API", "TangyWeb_API\TangyWeb_API.csproj", "{0A068D8B-13CC-48EA-B9BD-A76C8E18895F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

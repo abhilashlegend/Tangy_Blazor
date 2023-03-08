@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "IobH33kXI+kw+KbGtVAJrxSKthgqxTSuBb/OYPGIPMNYzhHipwswmcwK+UUex4em1FvUHImUuG/KnwgK9lTyBQ==",
+  "dgSpecHash": "ADLlmf6Q8tshOc+/dc2LTEBjnifZKSdkQemlaE831wuDSSrolgzuJsu8LA1CvHDQLB7Yzz0f6qz0JRWGVcSGBg==",
   "success": true,
   "projectFilePath": "G:\\Myprograms\\dotnet\\Tangy\\TangyWeb_Client\\TangyWeb_Client.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Abhil\\.nuget\\packages\\blazored.localstorage\\4.3.0\\blazored.localstorage.4.3.0.nupkg.sha512",
     "C:\\Users\\Abhil\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.10\\microsoft.aspnetcore.authorization.6.0.10.nupkg.sha512",
     "C:\\Users\\Abhil\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.10\\microsoft.aspnetcore.components.6.0.10.nupkg.sha512",
     "C:\\Users\\Abhil\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\6.0.10\\microsoft.aspnetcore.components.analyzers.6.0.10.nupkg.sha512",
@@ -34,7 +35,7 @@
     "C:\\Users\\Abhil\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\Abhil\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
     "C:\\Users\\Abhil\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512",
-    "C:\\Users\\Abhil\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.11\\microsoft.netcore.app.runtime.mono.browser-wasm.6.0.11.nupkg.sha512"
+    "C:\\Users\\Abhil\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.14\\microsoft.netcore.app.runtime.mono.browser-wasm.6.0.14.nupkg.sha512"
   ],
   "logs": []
 }
