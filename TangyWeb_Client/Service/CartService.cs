@@ -9,6 +9,7 @@ namespace TangyWeb_Client.Service
     public class CartService : ICartService
     {
         private readonly ILocalStorageService _localStorage;
+        public event Action OnChange;
 
         public CartService(ILocalStorageService localStorage)
         {
@@ -34,6 +35,7 @@ namespace TangyWeb_Client.Service
             }
             
             await _localStorage.SetItemAsync(SD.ShoppingCart, cart);
+            OnChange.Invoke();
         }
 
         public async Task IncrementCart(ShoppingCart cartToAdd)
@@ -62,6 +64,7 @@ namespace TangyWeb_Client.Service
                 });
             }
             await _localStorage.SetItemAsync(SD.ShoppingCart, cart);
+            OnChange.Invoke();
         }
     }
 }
