@@ -1,6 +1,10 @@
 ﻿@page "/details/{ProductId:int}"
 @using TangyWeb_Client.ViewModels;
 @inject IProductService _productService;
+@inject ICartService _cartService;
+@inject NavigationManager _navigationManager;
+@inject JSRuntime _JSRuntime;
+
 
 @if (IsProcessing)
 {
@@ -126,7 +130,9 @@ else
 
         await _cartService.IncrementCart(shoppingCart);
         _navigationManager.NavigateTo("/");
-        await _jsRuntime.ToastrSuccess("Product added to cart successfully");
+        await _JSRuntime.ToastrSuccess("Product added to cart successfully");
     }
+
+
 
 }
