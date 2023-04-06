@@ -85,3 +85,5 @@ G:\Myprograms\dotnet\Tangy\TangyWeb_API\obj\Debug\net6.0\refint\TangyWeb_API.dll
 G:\Myprograms\dotnet\Tangy\TangyWeb_API\obj\Debug\net6.0\TangyWeb_API.pdb
 G:\Myprograms\dotnet\Tangy\TangyWeb_API\obj\Debug\net6.0\TangyWeb_API.genruntimeconfig.cache
 G:\Myprograms\dotnet\Tangy\TangyWeb_API\obj\Debug\net6.0\ref\TangyWeb_API.dll
+G:\Myprograms\dotnet\Tangy\TangyWeb_API\bin\Debug\net6.0\Tangy_Common.dll
+G:\Myprograms\dotnet\Tangy\TangyWeb_API\bin\Debug\net6.0\Tangy_Common.pdb

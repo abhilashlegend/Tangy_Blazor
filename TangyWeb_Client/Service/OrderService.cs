@@ -32,9 +32,16 @@ namespace TangyWeb_Client.Service
             }
         }
 
-        public Task<IEnumerable<OrderDTO>> GetAll(string? userId)
+        public async Task<IEnumerable<OrderDTO>> GetAll(string? userId = null)
         {
-            throw new NotImplementedException();
+            var response = await _httpClient.GetAsync("/api/order");
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync();
+                var orders = JsonConvert.DeserializeObject<IEnumerable<OrderDTO>>(content);
+                return orders;
+            }
+            return new List<OrderDTO>();
         }
     }
 }

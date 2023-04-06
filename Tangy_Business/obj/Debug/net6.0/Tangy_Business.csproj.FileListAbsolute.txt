@@ -15,3 +15,5 @@ G:\Myprograms\dotnet\Tangy\Tangy_Business\obj\Debug\net6.0\Tangy_Business.dll
 G:\Myprograms\dotnet\Tangy\Tangy_Business\obj\Debug\net6.0\refint\Tangy_Business.dll
 G:\Myprograms\dotnet\Tangy\Tangy_Business\obj\Debug\net6.0\Tangy_Business.pdb
 G:\Myprograms\dotnet\Tangy\Tangy_Business\obj\Debug\net6.0\ref\Tangy_Business.dll
+G:\Myprograms\dotnet\Tangy\Tangy_Business\bin\Debug\net6.0\Tangy_Common.dll
+G:\Myprograms\dotnet\Tangy\Tangy_Business\bin\Debug\net6.0\Tangy_Common.pdb
