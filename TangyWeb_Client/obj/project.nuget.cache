@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "5+CG8SfDaaGYMobap9Obr2bhdaZXbwR1UeLJkN3tOIopVPw1SWCiUl5+xlog/LVRtsc996bEi0gWSZXW4QwZZQ==",
+  "dgSpecHash": "uIDJ5N5HrHUzDlX74PUPKwNVEnjYBU45OQ175nqEKuG3XEa5queUFqPaPf/yH3vPfPFCpJbR5OJkZnkbiW80sA==",
   "success": true,
   "projectFilePath": "G:\\Myprograms\\dotnet\\Tangy\\TangyWeb_Client\\TangyWeb_Client.csproj",
   "expectedPackageFiles": [
@@ -35,7 +35,7 @@
     "C:\\Users\\Abhil\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\Abhil\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
     "C:\\Users\\Abhil\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512",
-    "C:\\Users\\Abhil\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.15\\microsoft.netcore.app.runtime.mono.browser-wasm.6.0.15.nupkg.sha512"
+    "C:\\Users\\Abhil\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.16\\microsoft.netcore.app.runtime.mono.browser-wasm.6.0.16.nupkg.sha512"
   ],
   "logs": []
 }
